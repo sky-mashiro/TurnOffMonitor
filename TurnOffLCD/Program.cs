@@ -23,8 +23,7 @@ namespace TurnOffLCD
         private const int MONITOR_STANDBY = 1;
         static void Main(string[] args)
         {
-            //SendMessage(HWND_BROADCAST, WM_SYSCOMMAND, SC_MONITORPOWER, 2);
-            SendMessage(GetConsoleWindow(), WM_SYSCOMMAND, SC_MONITORPOWER, 2);
+            SendMessage(GetConsoleWindow(), WM_SYSCOMMAND, SC_MONITORPOWER, MONITOR_OFF);
         }
     }
 }
