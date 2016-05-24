@@ -22,7 +22,7 @@ namespace TurnOffLCD
         static void Main(string[] args)
         {
             SendMessage(HWND_BROADCAST, WM_SYSCOMMAND, SC_MONITORPOWER, MONITOR_OFF);
-            //Still in my computer, the monitor will turn on after 5 minutes
+            //Still in my computer, the monitor will turn on after 5 minutes, not sure what caused the problem
         }
     }
 }
